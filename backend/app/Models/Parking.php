@@ -21,4 +21,17 @@ class Parking extends Model
         'start_time' => 'datetime',
         'end_time' => 'datetime',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    public function zone()
+    {
+        return $this->belongsTo(Zone::class);
+    }
+    public function vehicle()
+    {
+        return $this->belongsTo(Vehicle::class);
+    }
 }

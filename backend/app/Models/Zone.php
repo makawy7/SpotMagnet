@@ -12,4 +12,10 @@ class Zone extends Model
         'name',
         'price_per_hour',
     ];
+
+
+    public function parkings()
+    {
+        return $this->hasMany(Parking::class);
+    }
 }
