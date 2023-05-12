@@ -31,4 +31,8 @@ class ParkingController extends Controller
         $parking->load('zone', 'vehicle');
         return ParkingResource::make($parking);
     }
+
+    public function stop()
+    {
+    }
 }
